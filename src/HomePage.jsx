@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
-import { tonConnect } from "./tonconnect";
-
+import { tonConnect } from "./tonConnect";
 const HomePage = () => {
   const [walletPopup, setWalletPopup] = useState(false);
   const [wallets, setWallets] = useState([]);
