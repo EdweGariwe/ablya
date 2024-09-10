@@ -1,0 +1,152 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 430px;
+}
+
+.loading-page__content-wrapper {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding-bottom: 90px;
+}
+
+.loading-page__logo {
+  width: 48.5%;
+  animation-name: logo;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(0);
+  }
+}
+
+.loading-page__content-piece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.outer-container {
+  width: 290px; /* Общая ширина */
+  height: 55px; /* Общая высота */
+  background: linear-gradient(
+    90deg,
+    #373735,
+    #181717
+  ); /* Черный цвет для бордера */
+  border-radius: 35px; /* Закругление краев */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(40, 40, 40, 0.7); /* Внешняя тень для 3D эффекта */
+}
+
+.progress-container {
+  overflow: hidden;
+  width: 92%;
+  height: 70%;
+  border-radius: inherit; /* Наследование закругленных краев */
+  background: black; /* Градиентный фон */
+  position: relative;
+}
+
+.progress-bar__percentage {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  left: 42%;
+  top: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Наследование закругленных краев */
+  background: linear-gradient(
+    90deg,
+    #ffcc00,
+    #ff3300
+  ); /* Наследование градиента от контейнера */
+  animation-name: progress;
+  animation-duration: 7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.play-button {
+  width: 230px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.567);
+  position: relative;
+}
+
+.play-button__icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border: 5px solid white;
+  background-color: #3f3fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+}
+
+.play-button__icon img {
+  width: 30px;
+}
+
+.play-button__text {
+  width: 95%;
+  height: 80%;
+  border-radius: inherit;
+  background: rgb(72, 62, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(72, 62, 246, 1) 54%,
+    rgba(89, 227, 255, 1) 100%
+  );
+}
+
+.play-button__text p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}

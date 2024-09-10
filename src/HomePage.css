@@ -1,0 +1,575 @@
+@import url(./main.css);
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.user-info__wrapper {
+  padding-top: 30px;
+  width: 100%;
+  height: 150px;
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-logo__wrapper {
+  max-width: 130px;
+  width: 100%;
+  position: relative;
+}
+
+.mini-logo__wrapper img {
+  width: 100%;
+  animation-name: logo-to-right;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes logo-to-right {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.massage-icon {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  animation-name: question;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes question {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.massage-icon img {
+  width: 30px;
+}
+
+.user-info__profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.user-info__balance {
+  width: 180px;
+  height: 100px;
+  background-color: #0000005f;
+  border-radius: 12px 0px 0px 12px;
+  animation-name: balance;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+
+.user-info__balance div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info__balance p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.wallet-symbol {
+  width: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.ticket-symbol {
+  width: 20px;
+}
+
+.ton-symbol {
+  width: 20px;
+}
+
+@keyframes balance {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.user-info__lvl {
+  width: 90px;
+  height: 100px;
+  background-color: #0000005f;
+  animation-name: lvl;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes lvl {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.hero-icon {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-icon p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-icon img {
+  width: 50px;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  margin-left: 14px;
+  margin-top: 30px;
+  animation-name: article-scale;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.1s;
+}
+
+.referrals-button {
+  max-width: 340px;
+  width: 100%;
+  height: 50px;
+  border-radius: 13px;
+  border: 1px solid black;
+  box-shadow: 7px 7px 7px #00000094;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@keyframes article-scale {
+  0% {
+    transform: scale(0);
+  }
+}
+
+.referrals-button p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin-top: 9px;
+}
+
+.daily-prices {
+  position: relative;
+  width: 340px;
+  height: 180px;
+  border-radius: 13px;
+  border: 1px solid black;
+  box-shadow: 7px 7px 7px #00000094;
+  background-color: #ffffff;
+  padding: 12px 12px;
+}
+
+.timer_and_claim-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer img {
+  width: 20px;
+}
+
+.timer p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #763737;
+}
+
+.claim-button {
+  width: 160px;
+  height: 35px;
+  border-radius: 17px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #0000008f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.claim-button:active {
+  transform: scale(0.95);
+}
+
+.info-price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.info-price div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-price p {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.plus {
+  position: relative;
+  bottom: 50px;
+  left: 220px;
+}
+
+.count {
+  margin-left: 220px;
+  margin-top: -20px;
+}
+
+.line {
+  width: 130px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: 120px;
+  left: 190px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 85px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: 200px;
+}
+
+.frame {
+  background-image: url(/frame.png);
+  background-size: cover;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  animation-name: button-spawning;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+
+.frame:active {
+  transform: scale(0.95);
+}
+
+.image-in-frame {
+  max-width: 55px;
+  max-height: 55px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+@keyframes button-spawning {
+  0% {
+    transform: scale(0);
+  }
+}
+
+.linked-button__animation-2 {
+  animation-delay: 0.3s;
+}
+
+.linked-button__animation-3 {
+  animation-delay: 0.6s;
+}
+
+.linked-button__animation-4 {
+  animation-delay: 0.9s;
+}
+
+@media screen and (max-width: 400px) {
+  .user-info__balance {
+    width: 150px;
+  }
+
+  .user-info__balance p {
+    font-size: 13.5px;
+    font-weight: 500;
+  }
+
+  .wallet-symbol {
+    width: 20px;
+    margin-bottom: 2px;
+  }
+
+  .ticket-symbol,
+  .ton-symbol {
+    width: 17px;
+  }
+
+  .user-info__lvl {
+    width: 70px;
+  }
+
+  .user-info__lvl p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .user-info__balance {
+    width: 130px;
+  }
+
+  .user-info__balance p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .wallet-symbol {
+    width: 20px;
+    margin-bottom: 2px;
+  }
+
+  .ticket-symbol,
+  .ton-symbol {
+    width: 17px;
+  }
+
+  .user-info__lvl {
+    width: 70px;
+  }
+
+  .user-info__lvl p {
+    font-size: 13px;
+  }
+
+  .hero-icon {
+    gap: 10px;
+  }
+
+  .referrals-button,
+  .daily-prices {
+    width: 300px;
+  }
+
+  .daily-prices {
+    height: 200px;
+  }
+
+  .line {
+    left: 180px;
+    top: 130px;
+    width: 100px;
+  }
+
+  .count img {
+    margin-top: 20px;
+  }
+
+  .user-info__profile {
+    gap: 5px;
+  }
+}
+
+.connect-wallet {
+  max-width: 340px;
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  left: 15px;
+}
+
+.connect-wallet__title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.connect-wallet__title {
+  width: 320px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-wallet__title p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.connect-wallet__closer {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+.connect-wallet__closer img {
+  width: 25px;
+  height: 25px;
+}
+
+.none {
+  display: none;
+}
+
+.connect-wallet__main {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.wallet-img {
+  position: relative;
+}
+
+.wallet {
+  width: 200px;
+}
+
+.ton-wallet {
+  width: 50px;
+  position: absolute;
+  right: 90px;
+  top: 43px;
+}
+
+.connect-button {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 3px #000000ac;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.connect-button:active {
+  transform: scale(0.99);
+}
+
+.wallet-list {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 10px 10px;
+  transition: .3s;
+}
+
+.wallet-list-closer {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.down {
+  transform: translateY(1000px);
+  transition: .3s;
+}
+
+.wallet-list-closer img {
+  width: 40px;
+}
+.wallet-list h1 {
+  font-size: 20px;
+}
+
+.wallet-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.wallet-list-li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wallet-list-li button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
